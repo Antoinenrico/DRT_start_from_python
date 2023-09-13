@@ -16,28 +16,18 @@ Welcome to this project repository! This Jupyter Notebook aims to showcase the a
 
 1. Introduction to the Voigt Circuit Function
 2. Ridge Regression
-3. Contributors
+3. Assistance & Improvements
 
 ---
 
 
 ## **1. Introduction to the Voigt Circuit Function**
 
-In the field of electrochemistry and impedance spectroscopy, the behavior of multiple RC (resistor-capacitor) circuits in series and parallel configurations represent complex medium.
-
-The Voigt circuit, also known as a parallel RC circuit, serves as a fundamental model in the study of electrochemical impedance spectroscopy. It plays a pivotal role in bridging the frequency domain with the time domain, offering insights into the dynamic behavior of electrochemical systems.
-
-The Voigt function combines the characteristics of two elementary responses: the Lorentzian response (related to a resistor and capacitor in parallel) and the Gaussian response. This combination effectively ties the frequency behavior of an electrochemical system to its temporal response. Understanding the Voigt function is essential for interpreting impedance data, especially when discerning between different relaxation processes in complex systems.
-
-
-![integral](https://latex.codecogs.com/gif.latex?\int_{-\infty}^{+\infty}&space;x&space;\,dx)
-
-
-## **Electrochemical Impedance and the Voigt Circuit Function**
-
 In the domain of electrochemical impedance spectroscopy (EIS), the response of multiple RC (resistor-capacitor) circuits, both in series and parallel configurations, can be modeled as intricate electrical analogues representing the intricate physicochemical processes in the medium.
 
 The Voigt circuit, often identified as a parallel RC circuit, stands as an archetypal representation in EIS. Its significance arises from its ability to transition insights from the frequency domain to the time domain, thereby elucidating the dynamic interplay in electrochemical systems.
+
+The Voigt function combines the characteristics of two elementary responses: the Lorentzian response (related to a resistor and capacitor in parallel) and the Gaussian response. This combination effectively ties the frequency behavior of an electrochemical system to its temporal response. Understanding the Voigt function is essential for interpreting impedance data, especially when discerning between different relaxation processes in complex systems.
 
 Mathematically, the impedance of a parallel RC circuit (Voigt element) is given by:
 
@@ -45,36 +35,19 @@ Mathematically, the impedance of a parallel RC circuit (Voigt element) is given 
 Z(\omega) = \frac{1}{\frac{1}{R} + j\omega C}
 \]
 
+![Z_omega](https://latex.codecogs.com/gif.latex?Z(\omega)&space;=&space;\frac{1}{\frac{1}{R}&space;+&space;j\omega&space;C})
+
 Where:
 - \( Z(\omega) \) is the impedance as a function of angular frequency \( \omega \).
 - \( R \) is the resistance.
 - \( C \) is the capacitance.
 - \( j \) is the imaginary unit.
 
-The Voigt function is a convolution of the Lorentzian and Gaussian functions, representing the response characteristics of the resistor and capacitor in parallel:
-
-\[
-V(x; \sigma, \gamma) = \int_{-\infty}^{\infty} \text{Gaussian}(x';\sigma) \times \text{Lorentzian}(x-x';\gamma) \, dx'
-\]
-
-Here:
-- \( \sigma \) and \( \gamma \) are the width parameters for the Gaussian and Lorentzian functions respectively.
-
-Comprehending the Voigt function becomes paramount for accurate interpretation of impedance spectra, especially when differentiating between various relaxation mechanisms in intricate electrochemical environments.
+The Voigt function is :
 
 
-![Z_omega](https://latex.codecogs.com/gif.latex?Z(\omega)&space;=&space;\frac{1}{\frac{1}{R}&space;+&space;j\omega&space;C})
 
-Where:
 
-- ![Z_omega_explanation](https://latex.codecogs.com/gif.latex?Z(\omega)) is the impedance as a function of angular frequency ![omega](https://latex.codecogs.com/gif.latex?\omega).
-- \( R \) is the resistance.
-- \( C \) is the capacitance.
-- \( j \) is the imaginary unit.
-
-The Voigt function is a convolution of the Lorentzian and Gaussian functions, representing the response characteristics of the resistor and capacitor in parallel:
-
-![Voigt_function](https://latex.codecogs.com/gif.latex?V(x;&space;\sigma,&space;\gamma)&space;=&space;\int_{-\infty}^{\infty}&space;\text{Gaussian}(x';\sigma)&space;\times&space;\text{Lorentzian}(x-x';\gamma)&space;\,dx')
 
 ---
 
