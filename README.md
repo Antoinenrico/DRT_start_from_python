@@ -14,7 +14,7 @@ Welcome to this project repository! This Jupyter Notebook aims to showcase the a
 
 ## **Table of Contents**
 
-1. Introduction to RC Circuitry & Cole-Cole Plots
+1. Introduction to the Voigt Circuit Function
 2. Ridge Regression
 3. Contributors
 
@@ -29,6 +29,10 @@ The Voigt circuit, also known as a parallel RC circuit, serves as a fundamental 
 
 The Voigt function combines the characteristics of two elementary responses: the Lorentzian response (related to a resistor and capacitor in parallel) and the Gaussian response. This combination effectively ties the frequency behavior of an electrochemical system to its temporal response. Understanding the Voigt function is essential for interpreting impedance data, especially when discerning between different relaxation processes in complex systems.
 
+
+\[
+\int_{-\infty}^{+\infty} x \, dx
+\]
 
 ## **Electrochemical Impedance and the Voigt Circuit Function**
 
