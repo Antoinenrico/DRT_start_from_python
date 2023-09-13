@@ -20,13 +20,49 @@ Welcome to this project repository! This Jupyter Notebook aims to showcase the a
 
 ---
 
-## **1. Introduction to RC Circuitry & Cole-Cole Plots**
 
-In the field of electrochemistry and impedance spectroscopy, the behavior of multiple RC (resistor-capacitor) circuits in series and parallel configurations can be complex. The Cole-Cole plot, a variant of the Nyquist plot, offers an insightful graphical representation of impedance data, allowing for the visualization of the relaxation processes in these circuits. 
+## **1. Introduction to the Voigt Circuit Function**
 
-In a Cole-Cole plot, the real part of the impedance (Z') is plotted against the imaginary part of the impedance (Z''), forming a semicircular profile. The frequency-dependent behavior of these plots provides information on the distribution of relaxation times in the system, which is particularly important in systems like solid-state electrolytes, biological cells, and more.
+In the field of electrochemistry and impedance spectroscopy, the behavior of multiple RC (resistor-capacitor) circuits in series and parallel configurations represent complex medium.
+
+The Voigt circuit, also known as a parallel RC circuit, serves as a fundamental model in the study of electrochemical impedance spectroscopy. It plays a pivotal role in bridging the frequency domain with the time domain, offering insights into the dynamic behavior of electrochemical systems.
+
+The Voigt function combines the characteristics of two elementary responses: the Lorentzian response (related to a resistor and capacitor in parallel) and the Gaussian response. This combination effectively ties the frequency behavior of an electrochemical system to its temporal response. Understanding the Voigt function is essential for interpreting impedance data, especially when discerning between different relaxation processes in complex systems.
+
+
+## **Electrochemical Impedance and the Voigt Circuit Function**
+
+In the domain of electrochemical impedance spectroscopy (EIS), the response of multiple RC (resistor-capacitor) circuits, both in series and parallel configurations, can be modeled as intricate electrical analogues representing the intricate physicochemical processes in the medium.
+
+The Voigt circuit, often identified as a parallel RC circuit, stands as an archetypal representation in EIS. Its significance arises from its ability to transition insights from the frequency domain to the time domain, thereby elucidating the dynamic interplay in electrochemical systems.
+
+Mathematically, the impedance of a parallel RC circuit (Voigt element) is given by:
+
+\[
+Z(\omega) = \frac{1}{\frac{1}{R} + j\omega C}
+\]
+
+Where:
+- \( Z(\omega) \) is the impedance as a function of angular frequency \( \omega \).
+- \( R \) is the resistance.
+- \( C \) is the capacitance.
+- \( j \) is the imaginary unit.
+
+The Voigt function is a convolution of the Lorentzian and Gaussian functions, representing the response characteristics of the resistor and capacitor in parallel:
+
+\[
+V(x; \sigma, \gamma) = \int_{-\infty}^{\infty} \text{Gaussian}(x';\sigma) \times \text{Lorentzian}(x-x';\gamma) \, dx'
+\]
+
+Here:
+- \( \sigma \) and \( \gamma \) are the width parameters for the Gaussian and Lorentzian functions respectively.
+
+Comprehending the Voigt function becomes paramount for accurate interpretation of impedance spectra, especially when differentiating between various relaxation mechanisms in intricate electrochemical environments.
+
 
 ---
+
+
 
 ## **2. Ridge Regression**
 
@@ -62,6 +98,15 @@ Whether you're a novice looking to learn or an expert with insights to share, yo
 
 ## **Citations**
 
+Voigt circuit : 
+
 Orazem, M. E., Shukla, P., & Membrino, M. A. (2001). Extension of the measurement model approach for deconvolution of underlying distributions for impedance measurements. Department of Chemical Engineering, University of Florida. Received 10 August 2001; received in revised form 24 September 2001.
 
-Please remember to replace `[Name 1]`, `[Name 2]`, etc., with the actual names of the contributors and adjust their specific contributions as needed.
+Meddings, N., Heinrich, M., Overney, F., Lee, J. S., Ruiz, V., Napolitano, E., ... & Park, J. (2020). Application of electrochemical impedance spectroscopy to commercial Li-ion cells: A review. Journal of Power Sources, 480, 228742.
+
+DRT : 
+
+Wan, T. H., Saccoccio, M., Chen, C., & Ciucci, F. (2015). Influence of the discretization methods on the distribution of relaxation times deconvolution: implementing radial basis functions with DRTtools. Electrochimica Acta, 184, 483-499.
+
+Ramírez-Chavarría, R. G., Sánchez-Pérez, C., Romero-Ornelas, L., & Ramón-Gallegos, E. (2020). Time-constant-domain spectroscopy: an impedance-based method for sensing biological cells in suspension. IEEE Sensors Journal, 21(1), 185-192.
+
