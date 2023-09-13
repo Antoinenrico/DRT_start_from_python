@@ -63,6 +63,19 @@ Here:
 Comprehending the Voigt function becomes paramount for accurate interpretation of impedance spectra, especially when differentiating between various relaxation mechanisms in intricate electrochemical environments.
 
 
+![Z_omega](https://latex.codecogs.com/gif.latex?Z(\omega)&space;=&space;\frac{1}{\frac{1}{R}&space;+&space;j\omega&space;C})
+
+Where:
+
+- ![Z_omega_explanation](https://latex.codecogs.com/gif.latex?Z(\omega)) is the impedance as a function of angular frequency ![omega](https://latex.codecogs.com/gif.latex?\omega).
+- \( R \) is the resistance.
+- \( C \) is the capacitance.
+- \( j \) is the imaginary unit.
+
+The Voigt function is a convolution of the Lorentzian and Gaussian functions, representing the response characteristics of the resistor and capacitor in parallel:
+
+![Voigt_function](https://latex.codecogs.com/gif.latex?V(x;&space;\sigma,&space;\gamma)&space;=&space;\int_{-\infty}^{\infty}&space;\text{Gaussian}(x';\sigma)&space;\times&space;\text{Lorentzian}(x-x';\gamma)&space;\,dx')
+
 ---
 
 
