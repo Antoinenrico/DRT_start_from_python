@@ -1,13 +1,8 @@
-# 
-
-
-# Distribution of Relaxation time 
-We take as model for our DRT the time function 
-
-
 # **DRT_start_from_python**
 DRT (Distribution of Relaxation Times) Analysis using Jupyter Notebook
 A fast and easy to take Jupiter Note Book for DRT (distribution of relaxation time)
+
+# Distribution of Relaxation time 
 The aim of this document is to build an easy to understand python algorithm for DRT.
 
 Welcome to this project repository! This Jupyter Notebook aims to showcase the algorithm for analyzing the Distribution of Relaxation Times (DRT) in multiple RC circuits. 
@@ -27,26 +22,18 @@ In the domain of electrochemical impedance spectroscopy (EIS), the response of m
 
 The Voigt circuit, often identified as a parallel RC circuit, stands as an archetypal representation in EIS. Its significance arises from its ability to transition insights from the frequency domain to the time domain, thereby elucidating the dynamic interplay in electrochemical systems.
 
-The Voigt function combines the characteristics of two elementary responses: the Lorentzian response (related to a resistor and capacitor in parallel) and the Gaussian response. This combination effectively ties the frequency behavior of an electrochemical system to its temporal response. Understanding the Voigt function is essential for interpreting impedance data, especially when discerning between different relaxation processes in complex systems.
-
 Mathematically, the impedance of a parallel RC circuit (Voigt element) is given by:
 
 \[
 Z(\omega) = \frac{1}{\frac{1}{R} + j\omega C}
 \]
 
-![Z_omega](https://latex.codecogs.com/gif.latex?Z(\omega)&space;=&space;\frac{1}{\frac{1}{R}&space;+&space;j\omega&space;C})
+Now, consider a large amount of serial RC. It's possible to see this situation as a infinite 'somme' (integrale) of a certain distribution function over a product which depend of tau (R*C) value for each serial RC.  
 
-Where:
-- \( Z(\omega) \) is the impedance as a function of angular frequency \( \omega \).
-- \( R \) is the resistance.
-- \( C \) is the capacitance.
-- \( j \) is the imaginary unit.
+"Now, consider a series of numerous RC circuits. This situation can be viewed as an integration of a specific distribution function over the  τ (R*C) value for each RC circuit in series.
 
-The Voigt function is :
-
-
-
+See : 
+Schichlein, H., Müller, A. C., Voigts, M., Krügel, A., & Ivers-Tiffée, E. (2002). Deconvolution of electrochemical impedance spectra for the identification of electrode reaction mechanisms in solid oxide fuel cells. Journal of Applied Electrochemistry, 32, 875-882.
 
 
 ---
@@ -57,20 +44,10 @@ The Voigt function is :
 
 Ridge regression is a type of linear regression that includes a regularization term. The regularization term discourages overly complex models which can lead to overfitting. The strength of the regularization is controlled by a parameter, often denoted as \( \lambda \). 
 
-- **Mathematically**, Ridge regression seeks to minimize the following:
-
-\[
-\text{Cost function} = ||Y - X\beta||^2_2 + \lambda||\beta||^2_2
-\]
-
-Where:
-- \( Y \) is the output vector.
-- \( X \) is the input matrix.
-- \( \beta \) is the coefficient vector.
-- \( \lambda \) is the regularization parameter.
-
-The ridge regression tends to shrink the coefficients, and this can be particularly useful when dealing with multicollinearity. In the context of this project, Ridge Regression is employed to robustly estimate the DRT from impedance data.
-
+- To see how we started : 
+https://www.youtube.com/watch?v=lJP8mQDyfPU&list=LL&index=5
+and
+https://www.youtube.com/watch?v=Nc01apG41bs&list=LL&index=6
 
 
 ## **3. Assistance & Improvements**
@@ -94,6 +71,8 @@ Orazem, M. E., Shukla, P., & Membrino, M. A. (2001). Extension of the measuremen
 Meddings, N., Heinrich, M., Overney, F., Lee, J. S., Ruiz, V., Napolitano, E., ... & Park, J. (2020). Application of electrochemical impedance spectroscopy to commercial Li-ion cells: A review. Journal of Power Sources, 480, 228742.
 
 DRT : 
+
+Schichlein, H., Müller, A. C., Voigts, M., Krügel, A., & Ivers-Tiffée, E. (2002). Deconvolution of electrochemical impedance spectra for the identification of electrode reaction mechanisms in solid oxide fuel cells. Journal of Applied Electrochemistry, 32, 875-882.
 
 Wan, T. H., Saccoccio, M., Chen, C., & Ciucci, F. (2015). Influence of the discretization methods on the distribution of relaxation times deconvolution: implementing radial basis functions with DRTtools. Electrochimica Acta, 184, 483-499.
 
