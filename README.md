@@ -42,7 +42,7 @@ Schichlein, H., Müller, A. C., Voigts, M., Krügel, A., & Ivers-Tiffée, E. (20
 
 ## **2. Ridge Regression**
 
-Ridge regression is a type of linear regression that includes a regularization term. The regularization term discourages overly complex models which can lead to overfitting. The strength of the regularization is controlled by a parameter, often denoted as \( \lambda \). 
+Ridge regression is a type of linear regression that includes a regularization term. The regularization term discourages overly complex models which can lead to overfitting. The strength of the regularization is controlled by a parameter, often denoted as \( \lambda \). A dedicate file is about this topic.
 
 - To see how we started : 
 https://www.youtube.com/watch?v=lJP8mQDyfPU&list=LL&index=5
